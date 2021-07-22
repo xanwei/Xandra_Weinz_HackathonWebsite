@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="chrome" />
+    <title>Responsive website, analoog schrijven,'Hackathonopdracht'</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=Caveat+Brush&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="grid-container">
+      <header>
+        <h1>Contactformulier</h1>
+        <nav>
+          <ul class="flex-container">
+            <li><a href="index.html">home</a></li>
+            <li><a href="over.html">over</a></li>
+            <li><a href="betekenis.html">betekenis</a></li>
+            <li><a href="kosten.html">kosten</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="main">
+        <main>
+          <legend><p>Om je te contacten, hier:</p></legend>
+          <h2>Enkele vragen - vul het antwoord in</h2>
+          <figure>
+            <img
+              src="img_site/handgeschrieben.jpg"
+              alt="handgeschreven brief"
+            />
+            <figcaption>Een handgeschreven brief</figcaption>
+          </figure>
+          <form name="contact" method="POST" data-netlify="true">
+            <section>
+              <label for="fname">Voornaam:</label><br />
+              <input type="text" id="fname" name="fname" required /><br />
+              <label for="lname">Achternaam:</label><br />
+              <input type="text" id="lname" name="lname" required /><br />
+              <label for="email">E-mailadres:</label><br />
+              <input type="text" id="email" required /><br />
+              <label for="phone">Telefoonnummer:</label><br />
+              <input type="tel" id="phone" name="phone" /><br />
+              <label for="quantity">Leeftijd:</label><br />
+              <input
+                type="number"
+                id="quantity"
+                name="quantity"
+                min="1"
+                max="120"
+                step="1"
+              /><br />
+              <label for="birthdate">Geboortedatum</label><br />
+              <input
+                type="date"
+                name="date"
+                id="date"
+                max="2021-02-28"
+                min="01-01-1900"
+              /><br />
+              <h3>Je gender</h3>
+              <input type="radio" id="male" name="gender" value="male" />
+              <label for="male">Mannelijk</label><br />
+              <input type="radio" id="female" name="gender" value="female" />
+              <label for="female">Vrouwelijk</label><br />
+              <input type="radio" id="other" name="gender" value="other" />
+              <label for="other">Anders</label><br />
+              <h4>Ingevuld, doorgelezen en foutje ontdekt?</h4>
+              <p>
+                <button type="reset">Doe dan deze stap nogmaals</button>
+                <button type="submit">Verzenden!</button>
+              </p>
+            </section>
+          </form>
+        </main>
+      </div>
+      <div class="widget">
+        <widget>
+          <form name="contact" method="POST" data-netlify="true">
+            <section>
+              <legend>
+                <h3>Wat is je favoriete kleur van briefpapier?</h3>
+              </legend>
+              Klik op het vak en maak je keuze.
+              <input type="color" id="colorpicker" value="#rrggbb" />
+              <h3>Wil je iets over je leven kwijt?</h3>
+              <p>Schrijf hier op:</p>
+              <label>
+                <type>
+                  <textarea name="bio" id="bio" cols="40" rows="15"></textarea>
+                </type>
+              </label>
+              <h3>Wat is jouw favoriete schrijver en boek?</h3>
+              Upload het foto van dit boek!
+              <input type="file" id="file" name="file" />
+              <h3>Wat is jouw favoriete gedichtensite?</h3>
+              Laat de url achter:
+              <label for="url">URL</label>
+              <input type="url" id="url" />
+              <h3>Je favoriete onderwerp</h3>
+              <input type="checkbox" id="issue1" name="issue1" value="hobby" />
+              <label for="issue1"> Mijn favoriet onderwerp is mijn hobby.</label
+              ><br />
+              <input
+                type="checkbox"
+                id="issue2"
+                name="issue2"
+                value="vrienden of gezin"
+              />
+              <label for="issue2">
+                Mijn favoriete onderwerp zijn mijn vrienden of gezin. </label
+              ><br />
+              <input type="checkbox" id="issue3" name="issue3" value="werk" />
+              <label for="issue3"> Mijn favoriete onderwerp is mijn werk.</label
+              ><br />
+              <h3>Ingevuld, doorgelezen en foutje ontdekt?</h3>
+              <p>
+                <button type="reset">Doe dan deze stap nogmaals</button>
+                <button type="submit">Verzenden!</button>
+              </p>
+            </section>
+          </form>
+        </widget>
+      </div>
+      <div class="footer">
+        <footer>
+          <p><a href="disclaimer.html">Disclaimer</a></p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

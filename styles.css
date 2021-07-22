@@ -1,0 +1,187 @@
+@media (min-width: 320px) {
+    body {
+        font-family: "Caveat";
+    }
+    p {
+        padding-left: 10px;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "header" "main" "widget" "footer";
+        grid-gap: 10px;
+    }
+    .flex-container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: left;
+        background-color: rgb(5, 16, 112);
+    }
+    .flex-container li {
+        list-style: none;
+        background-color: rgb(223, 185, 18);
+        width: 58px;
+        margin: 7px;
+        text-align: center;
+        line-height: 50px;
+        font-family: "Caveat Brush";
+        font-size: 18px;
+    }
+    .nav-little li {
+        width: 50px;
+        margin: 6px;
+        font-size: 14px;
+    }
+    ul {
+        padding-inline-start: 10px;
+    }
+    h1 {
+        font-family: "Caveat Brush";
+        margin-right: 15px;
+        margin-left: 20px;
+    }
+    h2, h3, h4 {
+        text-align-last: 15px links;
+        padding-left: 8px;
+        margin-left: 10px;
+    }
+    textarea {
+        border-color: black;
+        border: 5px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .main {
+        background-color: rgb(164, 183, 226);
+        border: 5px;
+    }
+    figure, iframe {
+        max-width: 100%;
+        object-fit: cover;
+        display: flex;
+        flex-flow: column;
+        border: 10px solid;
+        border-color: rgb(8, 8, 59);
+        margin-right: auto;
+        margin-left: 1em;
+        padding: 5px;
+        max-width: 260px;
+    }
+    img {
+        max-width: 300px;
+    }
+    figcaption {
+        background-color: #222;
+        color: rgb(210, 208, 243);
+        font: italic smaller sans-serif;
+        padding: 3px;
+        text-align: center;
+    }
+}
+
+.widget {
+    background-color: rgb(116, 145, 199);
+    border: 10px;
+    display: max-width 490px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.footer {
+    border: 8px solid;
+    border-top-color: #6464c5;
+    border-right-color: rgb(24, 24, 110);
+    border-left-color: rgb(24, 24, 110);
+    border-bottom-color: #6464c5;
+    background-color: rgb(223, 185, 18);
+    min-width: 120px;
+    max-width: 240px;
+    padding: 40px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: "Caveat Brush";
+    font-size: 18px;
+}
+
+table, th, td, caption {
+    border: 1px solid rgb(8, 8, 59);
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-width: thin 0 0 thin;
+    margin: 20px;
+    table-layout: auto;
+    max-width: 100%;
+    caption-side: top;
+}
+
+caption {
+    background-color: #99ccee;
+    border: 1px solid #6b5faf;
+    padding-top: 1em;
+    margin-top: 1em;
+}
+
+th, td {
+    font-weight: normal;
+    text-align: left;
+}
+
+th, caption {
+    background-color: #527f96;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "header header" "main widget" "footer footer";
+    }
+    header {
+        grid-area: header;
+    }
+    .flex-container li {
+        width: 65px;
+        margin: 8px;
+    }
+    .main {
+        grid-area: main;
+        margin-left: 2px;
+        margin-right: 1px;
+    }
+    .widget {
+        grid-area: widget;
+        margin-left: 1px;
+        margin-right: 2px;
+    }
+    .footer {
+        grid-area: footer;
+        min-width: 200px;
+        max-width: 350px;
+    }
+}
+
+@media (min-width: 1024px) {
+    figure {
+        max-width: 90%;
+        border: 12px solid;
+        padding: 6px;
+        max-width: 430px;
+    }
+    img {
+        max-width: 450px;
+    }
+    .widget, .main {
+        max-width: 490px
+    }
+    .footer {
+        min-width: 250px;
+        max-width: 450px;
+    }
+}
